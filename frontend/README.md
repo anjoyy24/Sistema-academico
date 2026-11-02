@@ -16,6 +16,8 @@ Abre la dirección que muestra Vite, normalmente `http://localhost:5173`.
 
 El backend debe ejecutarse en `http://localhost:3000` para que funcionen las peticiones a `/api`. El proxy de desarrollo se configura en `vite.config.js`.
 
+La demo usa correo simulado y datos en memoria. No requiere Google ni PostgreSQL. Los datos se pierden al reiniciar el backend.
+
 ## Estructura
 
 ```text
@@ -40,7 +42,8 @@ frontend/
 │   ├── router/
 │   │   └── index.js          # Define las rutas y la vista de cada dirección
 │   ├── services/
-│   │   └── api.js            # Peticiones HTTP al backend
+│   │   ├── api.js            # Endpoint de prueba
+│   │   └── entregas.js       # Envío simulado, entregas y feedback
 │   ├── App.vue               # Estructura compartida y vista de la ruta actual
 │   ├── main.js               # Inicia Vue, registra el router e importa estilos
 │   └── style.css             # Compatibilidad con la ruta anterior de estilos

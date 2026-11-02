@@ -18,6 +18,6 @@ onMounted(async () => {
   <section class="tarjeta">
     <h1>Inicio</h1>
     <p>{{ mensaje }}</p>
-    <p class="texto-secundario">Estas vistas son ejemplos de navegación; no verifican identidad ni permisos.</p>
+    <p class="texto-secundario">Demo para US-01 y US-02: simula un envío en Estudiante y revisa la entrega en Docente. No se envían correos reales ni se requiere Google o PostgreSQL. Los datos se pierden al reiniciar el backend.</p>
   </section>
 </template>

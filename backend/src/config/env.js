@@ -9,6 +9,7 @@ if (!Number.isInteger(port) || port < 1 || port > 65535) {
 }
 
 export const config = {
+  institutionalDomain: process.env.INSTITUTIONAL_DOMAIN || 'est.umss.edu',
   port,
   frontendOrigin: process.env.FRONTEND_ORIGIN || 'http://localhost:5173',
   databaseUrl: process.env.DATABASE_URL,
